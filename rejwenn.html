@@ -1,118 +1,121 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ht">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rejoindre - THE HOUSE</title>
+    <title>Rejwenn - THE HOUSE</title>
     <!-- Polices et Icônes -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- CSS dédié -->
     <link rel="stylesheet" href="rejwenn.css">
 </head>
 <body>
 
-    <!-- En-tête : Logo -->
-    <header class="top-bar">
-        <div class="logo-widget">
-            <img src="assets/logo.png" alt="Logo THE HOUSE" class="site-logo" onerror="this.src='https://via.placeholder.com/150x50/132228/589c80?text=LOGO'">
-        </div>
-    </header>
-
-    <!-- Menu Principal (PS5 Style) -->
-    <main class="main-menu">
-        <!-- Bouton Gaming -->
-        <div class="menu-item" id="btnGaming">
-            <div class="circle-btn">
-                <i class="fa-solid fa-gamepad"></i>
+    <div class="linktree-container">
+        
+        <!-- CARTE DE PROFIL THE HOUSE -->
+        <div class="profile-card">
+            <div class="banner">
+                <!-- Remplacez par votre bannière dans assets/ -->
+                <img src="assets/banner.png" alt="Bannière THE HOUSE" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop'">
             </div>
-            <span>Gaming</span>
-        </div>
-
-        <!-- Ligne de séparation -->
-        <div class="divider"></div>
-
-        <!-- Bouton Community -->
-        <div class="menu-item" id="btnCommunity">
-            <div class="circle-btn">
-                <i class="fa-solid fa-users"></i>
-            </div>
-            <span>Community</span>
-        </div>
-    </main>
-
-    <!-- Pied de page : Copyright -->
-    <footer class="footer-bar">
-        <p class="copyright">© THE HOUSE 2027</p>
-    </footer>
-
-    <!-- ========================================== -->
-    <!-- MODALE GAMING -->
-    <!-- ========================================== -->
-    <div class="modal-overlay" id="gamingModal">
-        <div class="modal-content">
-            <button class="close-btn" id="closeGaming"><i class="fa-solid fa-xmark"></i></button>
-            
-            <h2 class="modal-title">L'Univers Gaming</h2>
-            
-            <!-- Slider (PowerPoint Style) -->
-            <div class="slider-container">
-                <div class="slider-track" id="sliderTrack">
-                    <!-- Slide 1 -->
-                    <div class="slide">
-                        <i class="fa-solid fa-rocket slide-icon"></i>
-                        <h3>Le Concept</h3>
-                        <p>Bienvenue dans le futur du gaming chez THE HOUSE. Nous créons un espace où passion, compétition et bonne humeur se rencontrent.</p>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="slide">
-                        <i class="fa-brands fa-discord slide-icon"></i>
-                        <h3>Qu'est-ce que Discord ?</h3>
-                        <p>Discord est la plateforme idéale pour rester connecté. Que ce soit pour discuter en vocal, partager des moments ou organiser des tournois, tout se passe ici.</p>
-                    </div>
+            <div class="profile-info">
+                <div class="avatar-wrapper">
+                    <!-- Remplacez par votre logo dans assets/ -->
+                    <img src="assets/thehouse.png" alt="Logo THE HOUSE" onerror="this.src='https://via.placeholder.com/150/132228/589c80?text=TH'">
                 </div>
-                <!-- Flèches de navigation -->
-                <button class="slider-btn prev" id="prevSlide"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="slider-btn next" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-
-            <!-- Boutons de redirection Gaming -->
-            <div class="action-links">
-                <a href="https://apps.apple.com/app/discord-talk-chat-hangout/id985746746" target="_blank" class="link-btn apple">
-                    <i class="fa-brands fa-apple"></i> iPhone
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.discord" target="_blank" class="link-btn android">
-                    <i class="fa-brands fa-android"></i> Android
-                </a>
-                <a href="https://discord.gg/votre-lien" target="_blank" class="link-btn discord">
-                    <i class="fa-brands fa-discord"></i> Serveur THE HOUSE
-                </a>
+                <h1>THE HOUSE</h1>
+                <p class="tagline">"Plis pase yon kominote, yon fanmi."</p>
+                <div class="social-row">
+                    <a href="thehouse.html" title="Li liv nou an"><i class="fa-solid fa-book-open"></i></a>
+                    <a href="index.html" title="Retounen sou paj akèy"><i class="fa-solid fa-house"></i></a>
+                </div>
             </div>
         </div>
+
+        <!-- LIENS DE REDIRECTION -->
+        <div class="links-section">
+            
+            <!-- KATEGORI DISCORD -->
+            <h2 class="category-title"><i class="fa-brands fa-discord"></i> Discord</h2>
+            
+            <!-- Bouton Kisa Discord ye -->
+            <button class="link-btn discord-btn" id="openDiscordInfo">
+                <i class="fa-solid fa-circle-info"></i> Kisa Discord ye?
+            </button>
+
+            <!-- Bouton Espas Discord -->
+            <a href="https://discord.gg/nuzmepZm8e" target="_blank" class="link-btn discord-server-btn">
+                <i class="fa-brands fa-discord"></i> Espas Discord The House
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </a>
+
+            <!-- KATEGORI WHATSAPP -->
+            <h2 class="category-title"><i class="fa-brands fa-whatsapp"></i> WhatsApp</h2>
+
+            <!-- Bouton Gwoup WhatsApp -->
+            <a href="https://chat.whatsapp.com/votre-lien" target="_blank" class="link-btn whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> Rejwenn Gwoup WhatsApp la
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </a>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer-bar">
+            <p class="copyright">© THE HOUSE 2027</p>
+        </footer>
     </div>
 
     <!-- ========================================== -->
-    <!-- MODALE COMMUNITY -->
+    <!-- MODAL : KISA DISCORD YE? (Style Liv) -->
     <!-- ========================================== -->
-    <div class="modal-overlay" id="communityModal">
-        <div class="modal-content">
-            <button class="close-btn" id="closeCommunity"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-overlay" id="discordModal">
+        <div class="modal-content book-modal">
+            <button class="close-btn" id="closeDiscordInfo"><i class="fa-solid fa-xmark"></i></button>
             
-            <h2 class="modal-title">La Communauté</h2>
-            
-            <div class="community-text">
-                <i class="fa-solid fa-globe slide-icon"></i>
-                <p>Rejoignez notre réseau grandissant. Découvrez nos projets, échangez avec l'équipe et restez informé de nos dernières actualités.</p>
+            <div class="book-header">
+                <h2 class="modal-title">Kisa Discord ye?</h2>
+                <p class="modal-subtitle">Yon ti gid pou konprann</p>
             </div>
 
-            <!-- Boutons de redirection Community -->
-            <div class="action-links">
-                <a href="https://votre-portfolio.com" target="_blank" class="link-btn portfolio">
-                    <i class="fa-solid fa-briefcase"></i> Portfolio THE HOUSE
-                </a>
-                <a href="https://chat.whatsapp.com/votre-lien" target="_blank" class="link-btn whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i> Groupe WhatsApp
-                </a>
+            <div class="book-body">
+                <!-- Image d'illustration -->
+                <div class="book-image">
+                    <img src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6116da8fe318cb3f71d95fe3_1_Pn7Cp-mxO4NcEhc35GMQKQ-p-1080.jpeg" alt="Discord Illustration">
+                </div>
+
+                <p class="drop-cap">Discord se yon platfòm konvèsasyon gratis ki fèt pou kominote. Li pèmèt ou pale ak zanmi w, pataje moman, epi jwe ansanm, kit ou sou òdinatè, kit ou sou telefòn.</p>
+                
+                <p>Anplis de sa, li ofri anpil fonksyon: ou ka kreye kanal tèks, kanal vokal, pataje ekran, epi òganize evènman. Se tankou yon gwo kay kote chak gwoup gen pwòp chanm pa yo.</p>
+                
+                <h3>Poukisa pou w itilize l?</h3>
+                <ul class="styled-list">
+                    <li><strong>Pale fasil:</strong> Diskisyon vokal ak tèks san pwoblèm.</li>
+                    <li><strong>Kominote:</strong> Jwenn moun ki gen menm enterè ak ou.</li>
+                    <li><strong>Gaming:</strong> Òganize ekip pou jwe ansanm.</li>
+                </ul>
+
+                <div class="download-section">
+                    <p>Telechaje aplikasyon an pou w kòmanse:</p>
+                    <div class="download-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.discord" target="_blank" class="store-btn android">
+                            <i class="fa-brands fa-android"></i>
+                            <div class="store-text">
+                                <span>Disponib sou</span>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="https://apps.apple.com/app/discord-talk-chat-hangout/id985746746" target="_blank" class="store-btn apple">
+                            <i class="fa-brands fa-apple"></i>
+                            <div class="store-text">
+                                <span>Telechaje sou</span>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
