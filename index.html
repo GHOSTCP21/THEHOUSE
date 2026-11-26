@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness App</title>
+    <!-- Importation de la police Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Importation des icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Liaison avec le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        
+        <!-- Haut de page : Logo (Remplacer l'image dans le dossier assets) -->
+        <div class="top-bar">
+            <div class="logo-widget">
+                <img src="assets/logo.png" alt="Logo" class="site-logo" onerror="this.src='https://via.placeholder.com/150x50/132228/589c80?text=LOGO'">
+            </div>
+        </div>
+
+        <!-- Section Centrale -->
+        <div class="main-stats">
+            <!-- Icône d'horloge -->
+            <i class="fa-solid fa-hourglass-half location-arrow"></i>
+            
+            <!-- Le compteur de temps restant -->
+            <div class="timer-value" id="timer">Banm Kalkile...</div>
+            <div class="distance-label">Tan Ki Rete Avan Lansman</div>
+
+            <!-- Zone des boutons d'action -->
+            <div class="action-buttons">
+                <!-- Bouton Ajouter au Calendrier (Rond avec icône seule) -->
+                <button class="action-btn calendar-btn" id="addToCalendarBtn" title="Ajouter au calendrier" aria-label="Ajouter au calendrier">
+                    <i class="fa-regular fa-calendar-plus"></i>
+                </button>
+
+                <!-- Bouton Nous Rejoindre (Caché par défaut) -->
+                <button class="action-btn join-btn hidden" id="joinUsBtn">
+                    <i class="fa-solid fa-users"></i> Rejwenn Nou !!
+                </button>
+            </div>
+        </div>
+
+        <!-- Bas de page -->
+        <div class="footer-bar">
+            <div class="social-section">
+                <span>SWIV NOU</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/thehouseht"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/thehouseht"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@thehouseht"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright au centre -->
+            <p class="copyright">© THE HOUSE 2027</p>
+
+            <!-- Bouton En Savoir Plus -->
+            <button class="learn-more-btn" id="learnMoreBtn">
+                Kiyes Nou Ye <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Liaison avec le fichier JS -->
+    <script src="script.js"></script>
+</body>
+</html>
