@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejoindre - THE HOUSE</title>
+    <!-- Polices et Icônes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS dédié -->
+    <link rel="stylesheet" href="rejwenn.css">
+</head>
+<body>
+
+    <!-- En-tête : Logo -->
+    <header class="top-bar">
+        <div class="logo-widget">
+            <img src="assets/logo.png" alt="Logo THE HOUSE" class="site-logo" onerror="this.src='https://via.placeholder.com/150x50/132228/589c80?text=LOGO'">
+        </div>
+    </header>
+
+    <!-- Menu Principal (PS5 Style) -->
+    <main class="main-menu">
+        <!-- Bouton Gaming -->
+        <div class="menu-item" id="btnGaming">
+            <div class="circle-btn">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <span>Gaming</span>
+        </div>
+
+        <!-- Ligne de séparation -->
+        <div class="divider"></div>
+
+        <!-- Bouton Community -->
+        <div class="menu-item" id="btnCommunity">
+            <div class="circle-btn">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <span>Community</span>
+        </div>
+    </main>
+
+    <!-- Pied de page : Copyright -->
+    <footer class="footer-bar">
+        <p class="copyright">© THE HOUSE 2027</p>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- MODALE GAMING -->
+    <!-- ========================================== -->
+    <div class="modal-overlay" id="gamingModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeGaming"><i class="fa-solid fa-xmark"></i></button>
+            
+            <h2 class="modal-title">L'Univers Gaming</h2>
+            
+            <!-- Slider (PowerPoint Style) -->
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <i class="fa-solid fa-rocket slide-icon"></i>
+                        <h3>Le Concept</h3>
+                        <p>Bienvenue dans le futur du gaming chez THE HOUSE. Nous créons un espace où passion, compétition et bonne humeur se rencontrent.</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <i class="fa-brands fa-discord slide-icon"></i>
+                        <h3>Qu'est-ce que Discord ?</h3>
+                        <p>Discord est la plateforme idéale pour rester connecté. Que ce soit pour discuter en vocal, partager des moments ou organiser des tournois, tout se passe ici.</p>
+                    </div>
+                </div>
+                <!-- Flèches de navigation -->
+                <button class="slider-btn prev" id="prevSlide"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn next" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Boutons de redirection Gaming -->
+            <div class="action-links">
+                <a href="https://apps.apple.com/app/discord-talk-chat-hangout/id985746746" target="_blank" class="link-btn apple">
+                    <i class="fa-brands fa-apple"></i> iPhone
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.discord" target="_blank" class="link-btn android">
+                    <i class="fa-brands fa-android"></i> Android
+                </a>
+                <a href="https://discord.gg/votre-lien" target="_blank" class="link-btn discord">
+                    <i class="fa-brands fa-discord"></i> Serveur THE HOUSE
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODALE COMMUNITY -->
+    <!-- ========================================== -->
+    <div class="modal-overlay" id="communityModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeCommunity"><i class="fa-solid fa-xmark"></i></button>
+            
+            <h2 class="modal-title">La Communauté</h2>
+            
+            <div class="community-text">
+                <i class="fa-solid fa-globe slide-icon"></i>
+                <p>Rejoignez notre réseau grandissant. Découvrez nos projets, échangez avec l'équipe et restez informé de nos dernières actualités.</p>
+            </div>
+
+            <!-- Boutons de redirection Community -->
+            <div class="action-links">
+                <a href="https://votre-portfolio.com" target="_blank" class="link-btn portfolio">
+                    <i class="fa-solid fa-briefcase"></i> Portfolio THE HOUSE
+                </a>
+                <a href="https://chat.whatsapp.com/votre-lien" target="_blank" class="link-btn whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Groupe WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS dédié -->
+    <script src="rejwenn.js"></script>
+</body>
+</html>
