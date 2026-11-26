@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================================
     const EVENT_NAME = "THE HOUSE - COMEBACK";
     const EVENT_DESCRIPTION = "Team THE HOUSE ap retounen sou beton an... Ou pare ?";
-    const EVENT_LOGO_URL = "assets/logo.png"; 
+    const EVENT_LOGO_URL = "https://thehousehaiti.netlify.app/assets/logo.png"; 
     const EVENT_LOCATION = "En ligne";
     
     // Date de l'événement : 1er Décembre 2026 à 00:00:00 (Fuseau horaire d'Haïti : UTC-5)
